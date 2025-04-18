@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,34 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom Gaushala colors
+				gaushala: {
+					'green': {
+						'50': '#f2fce4',
+						'100': '#e0f7c8',
+						'200': '#c3ed99',
+						'300': '#9cdc5d',
+						'400': '#84cc16', // Main green
+						'500': '#65a30d',
+						'600': '#4d7c0f', // Darker green
+						'700': '#3f6212',
+						'800': '#365314',
+						'900': '#2f4517',
+					},
+					'saffron': {
+						'50': '#fff7ed',
+						'100': '#ffedd5',
+						'200': '#fed7aa',
+						'300': '#fdba74',
+						'400': '#fb923c',
+						'500': '#f97316', // Main saffron
+						'600': '#ea580c',
+						'700': '#c2410c',
+						'800': '#9a3412',
+						'900': '#7c2d12',
+					},
+					'cream': '#FEF7CD',
 				}
 			},
 			borderRadius: {
@@ -89,6 +118,10 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
+			},
+			fontFamily: {
+				'poppins': ['Poppins', 'sans-serif'],
+				'open-sans': ['"Open Sans"', 'sans-serif']
 			}
 		}
 	},
