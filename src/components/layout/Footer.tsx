@@ -1,10 +1,7 @@
-
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Twitter, Youtube, Heart, Mail, Phone, MapPin } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-gray-900 text-white pt-16 pb-8">
+  return <footer className="bg-gray-900 text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
@@ -68,9 +65,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/transparency" className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
-                  <Heart size={18} /> Financial Reports
-                </Link>
+                
               </li>
             </ul>
           </div>
@@ -110,8 +105,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

@@ -8,7 +8,7 @@ const Hero = () => {
     }} />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50" />
       
-      <div className="relative container mx-auto px-4 py-24 md:py-32 flex flex-col items-center text-center">
+      <div className="relative container mx-auto px-4 md:py-32 flex flex-col items-center text-center py-[160px]">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-4xl">Save a Life Today</h1>
         <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl">
           Join our mission to protect, nurture, and celebrate cows - India's sacred animals
