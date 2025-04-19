@@ -25,7 +25,7 @@ const About = () => {
                   Our foundation is built on the principle of "गौ सेवा परमो धर्मः" - "Service to cows is the highest duty", recognizing the sacred place cows hold in Indian culture and spirituality.
                 </p>
               </div>
-              <div className="rounded-lg overflow-hidden shadow-lg">
+              <div className="rounded-lg overflow-hidden shadow-lg bg-neutral-50">
                 <img src="https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=1024&q=80" alt="Founding Story" className="w-full h-full object-cover" />
               </div>
             </div>
