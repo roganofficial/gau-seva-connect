@@ -2,10 +2,8 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-
 const About = () => {
-  return (
-    <div className="flex flex-col min-h-screen">
+  return <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-grow">
         {/* Hero Section */}
@@ -37,11 +35,7 @@ const About = () => {
                 </p>
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=1024&q=80" 
-                  alt="Founding Story" 
-                  className="w-full h-full object-cover"
-                />
+                <img src="https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=1024&q=80" alt="Founding Story" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -125,11 +119,7 @@ const About = () => {
             <h2 className="text-3xl font-semibold mb-10 text-center text-gray-900">Our Leadership Team</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white rounded-lg overflow-hidden shadow-md">
-                <img 
-                  src="https://randomuser.me/api/portraits/men/32.jpg" 
-                  alt="Ramesh Gupta" 
-                  className="w-full h-64 object-cover object-center"
-                />
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ramesh Gupta" className="w-full h-64 object-cover object-center" />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-1 text-gray-900">Shri Ramesh Gupta</h3>
                   <p className="text-gaushala-green-600 mb-4">Founder & Chairman</p>
@@ -139,11 +129,7 @@ const About = () => {
                 </div>
               </div>
               <div className="bg-white rounded-lg overflow-hidden shadow-md">
-                <img 
-                  src="https://randomuser.me/api/portraits/women/44.jpg" 
-                  alt="Dr. Sunita Sharma" 
-                  className="w-full h-64 object-cover object-center"
-                />
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dr. Sunita Sharma" className="w-full h-64 object-cover object-center" />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-1 text-gray-900">Dr. Sunita Sharma</h3>
                   <p className="text-gaushala-green-600 mb-4">Chief Veterinarian</p>
@@ -153,11 +139,7 @@ const About = () => {
                 </div>
               </div>
               <div className="bg-white rounded-lg overflow-hidden shadow-md">
-                <img 
-                  src="https://randomuser.me/api/portraits/men/62.jpg" 
-                  alt="Mohan Patel" 
-                  className="w-full h-64 object-cover object-center"
-                />
+                <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="Mohan Patel" className="w-full h-64 object-cover object-center" />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-1 text-gray-900">Shri Mohan Patel</h3>
                   <p className="text-gaushala-green-600 mb-4">Operations Director</p>
@@ -184,7 +166,7 @@ const About = () => {
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gaushala-green-700 text-lg px-8">
+                <Button size="lg" variant="outline" className="border-white hover:bg-white text-lg px-8 text-lime-800">
                   Contact Us
                 </Button>
               </Link>
@@ -193,8 +175,6 @@ const About = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default About;
