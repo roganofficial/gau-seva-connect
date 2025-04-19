@@ -9,7 +9,7 @@ const CallToAction = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/donate">
-            <Button size="lg" className="bg-[#ea384c] hover:bg-[#d62d3f] text-white text-lg px-8 py-6 transform transition-all duration-300 hover:scale-105 animate-none">
+            <Button size="lg" className="text-white text-lg px-8 py-6 transform transition-all duration-300 hover:scale-105 animate-none bg-orange-600 hover:bg-orange-500">
               Donate Now
             </Button>
           </Link>
