@@ -49,7 +49,7 @@ const About = () => {
                 <h3 className="text-xl font-semibold mb-2 text-gaushala-green-600">2021</h3>
                 <p className="text-gray-700">Established dedicated geriatric care facility for elderly cows</p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="p-6 rounded-lg shadow-sm bg-gray-200">
                 <h3 className="text-xl font-semibold mb-2 text-gaushala-green-600">2020</h3>
                 <p className="text-gray-700">Expanded shelter capacity to accommodate 1,000+ cows</p>
               </div>
@@ -96,7 +96,7 @@ const About = () => {
                 <p className="text-lg text-gray-700 mb-4">
                   To become a model Gaushala that sets standards for cow protection and welfare across India, integrating traditional values with modern practices.
                 </p>
-                <p className="text-lg text-gray-700">
+                <p className="text-lg text-gray-700 bg-gray-200">
                   We envision a world where every cow is treated with respect and care, recognized for their spiritual significance and contribution to sustainable agriculture.
                 </p>
               </div>
