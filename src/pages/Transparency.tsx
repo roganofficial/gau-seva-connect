@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -7,27 +6,16 @@ import { Button } from "@/components/ui/button";
 import { Download, FileText, Award, Shield, BarChart } from "lucide-react";
 
 // You would replace this with actual chart components using recharts
-const ExpenseChart = () => (
-  <div className="h-72 bg-gray-100 rounded-md flex items-center justify-center">
+const ExpenseChart = () => <div className="h-72 bg-gray-100 rounded-md flex items-center justify-center">
     <p className="text-gray-600">Expense Breakdown Chart</p>
-  </div>
-);
-
+  </div>;
 const Transparency = () => {
-  return (
-    <div className="flex flex-col min-h-screen">
+  return <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-gaushala-cream py-12">
-          <div className="container mx-auto px-4">
-            <div className="text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Transparency Hub</h1>
-              <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-                We believe in complete transparency. Access our legal documentation, financial reports, and compliance information.
-              </p>
-            </div>
-          </div>
+        <section className="bg-gaushala-cream px-0 mx-0 my-[5px] py-0">
+          
         </section>
 
         {/* Transparency Content */}
@@ -432,8 +420,6 @@ const Transparency = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Transparency;
