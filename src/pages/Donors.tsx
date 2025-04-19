@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -159,6 +158,10 @@ const Donors = () => {
     }
   ];
 
+  const handleToggleAnonymous = () => {
+    setShowAnonymous(!showAnonymous);
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
@@ -184,16 +187,19 @@ const Donors = () => {
                 <label htmlFor="show-anonymous" className="mr-3 text-gray-700">
                   Show Anonymous Donors
                 </label>
-                <div className="relative inline-block w-12 h-6 rounded-full bg-gray-200">
+                <div 
+                  className="relative inline-block w-12 h-6 rounded-full bg-gray-200 cursor-pointer"
+                  onClick={handleToggleAnonymous}
+                >
                   <input
                     type="checkbox"
                     id="show-anonymous"
                     className="sr-only"
                     checked={showAnonymous}
-                    onChange={() => setShowAnonymous(!showAnonymous)}
+                    onChange={handleToggleAnonymous}
                   />
                   <span
-                    className={`absolute left-1 top-1 w-4 h-4 rounded-full transition-transform duration-200 ease-in-out ${
+                    className={`absolute left-1 top-1 w-4 h-4 rounded-full transition-transform duration-200 ease-in-out bg-white shadow-sm ${
                       showAnonymous ? 'transform translate-x-6 bg-gaushala-green-500' : 'bg-gray-500'
                     }`}
                   />

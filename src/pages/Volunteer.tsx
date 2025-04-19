@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Card, CardContent } from "@/components/ui/card";
@@ -192,7 +191,6 @@ const Volunteer = () => {
                         id="motivation"
                         placeholder="Tell us why you're interested in volunteering"
                         className="min-h-[120px]"
-                        required
                       />
                     </div>
 

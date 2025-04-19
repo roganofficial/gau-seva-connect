@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -48,90 +47,47 @@ const About = () => {
           </div>
         </section>
 
-        {/* Timeline */}
+        {/* Major Developments Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-semibold mb-10 text-center text-gray-900">Our Journey</h2>
-            <div className="relative">
-              {/* Timeline line */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gaushala-green-400"></div>
-              
-              {/* Timeline items */}
-              <div className="space-y-16 relative">
-                <div className="flex flex-col md:flex-row items-center">
-                  <div className="flex-1 md:text-right md:pr-12 mb-4 md:mb-0">
-                    <h3 className="text-2xl font-semibold mb-2 text-gaushala-green-600">2003</h3>
-                    <p className="text-gray-700">Founded with 5 cows in a small village shed</p>
-                  </div>
-                  <div className="bg-gaushala-saffron-500 w-8 h-8 rounded-full z-10 mx-4 md:mx-0"></div>
-                  <div className="flex-1 md:pl-12">
-                    <img 
-                      src="https://images.unsplash.com/photo-1493962853295-0fd70327578a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                      alt="2003 Founding" 
-                      className="rounded-lg shadow-md"
-                    />
-                  </div>
-                </div>
+            <h2 className="text-3xl font-semibold mb-8 text-center text-gray-900">Major Developments (2020-Present)</h2>
+            <div className="max-w-3xl mx-auto space-y-6">
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-2 text-gaushala-green-600">2023</h3>
+                <p className="text-gray-700">Completed construction of state-of-the-art medical facility capable of treating 100+ cows simultaneously</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-2 text-gaushala-green-600">2022</h3>
+                <p className="text-gray-700">Launched mobile veterinary unit for emergency rescues and treatment</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-2 text-gaushala-green-600">2021</h3>
+                <p className="text-gray-700">Established dedicated geriatric care facility for elderly cows</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-2 text-gaushala-green-600">2020</h3>
+                <p className="text-gray-700">Expanded shelter capacity to accommodate 1,000+ cows</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                <div className="flex flex-col md:flex-row items-center">
-                  <div className="flex-1 md:text-right md:pr-12 md:order-1 md:pl-0 pl-12 order-2">
-                    <img 
-                      src="https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                      alt="2010 Expansion" 
-                      className="rounded-lg shadow-md"
-                    />
-                  </div>
-                  <div className="bg-gaushala-saffron-500 w-8 h-8 rounded-full z-10 mx-4 md:mx-0 order-1"></div>
-                  <div className="flex-1 md:pl-12 mb-4 md:mb-0 order-3">
-                    <h3 className="text-2xl font-semibold mb-2 text-gaushala-green-600">2010</h3>
-                    <p className="text-gray-700">Expanded to house 200 cows with proper medical facilities</p>
-                  </div>
-                </div>
-
-                <div className="flex flex-col md:flex-row items-center">
-                  <div className="flex-1 md:text-right md:pr-12 mb-4 md:mb-0">
-                    <h3 className="text-2xl font-semibold mb-2 text-gaushala-green-600">2015</h3>
-                    <p className="text-gray-700">Registered as official non-profit organization</p>
-                  </div>
-                  <div className="bg-gaushala-saffron-500 w-8 h-8 rounded-full z-10 mx-4 md:mx-0"></div>
-                  <div className="flex-1 md:pl-12">
-                    <img 
-                      src="https://images.unsplash.com/photo-1517022812141-23620dba5c23?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                      alt="2015 Registration" 
-                      className="rounded-lg shadow-md"
-                    />
-                  </div>
-                </div>
-
-                <div className="flex flex-col md:flex-row items-center">
-                  <div className="flex-1 md:text-right md:pr-12 md:order-1 md:pl-0 pl-12 order-2">
-                    <img 
-                      src="https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                      alt="2020 Modern Facility" 
-                      className="rounded-lg shadow-md"
-                    />
-                  </div>
-                  <div className="bg-gaushala-saffron-500 w-8 h-8 rounded-full z-10 mx-4 md:mx-0 order-1"></div>
-                  <div className="flex-1 md:pl-12 mb-4 md:mb-0 order-3">
-                    <h3 className="text-2xl font-semibold mb-2 text-gaushala-green-600">2020</h3>
-                    <p className="text-gray-700">Modern facilities built with capacity for 1,000+ cows</p>
-                  </div>
-                </div>
-
-                <div className="flex flex-col md:flex-row items-center">
-                  <div className="flex-1 md:text-right md:pr-12 mb-4 md:mb-0">
-                    <h3 className="text-2xl font-semibold mb-2 text-gaushala-green-600">Today</h3>
-                    <p className="text-gray-700">Leading Gaushala with advanced medical facilities and sustainable practices</p>
-                  </div>
-                  <div className="bg-gaushala-saffron-500 w-8 h-8 rounded-full z-10 mx-4 md:mx-0"></div>
-                  <div className="flex-1 md:pl-12">
-                    <img 
-                      src="https://images.unsplash.com/photo-1493962853295-0fd70327578a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                      alt="Today" 
-                      className="rounded-lg shadow-md"
-                    />
-                  </div>
-                </div>
+        {/* Awards and Recognition */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-semibold mb-8 text-center text-gray-900">Awards & Recognition</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="bg-gaushala-cream p-6 rounded-lg">
+                <h3 className="text-xl font-semibold mb-2 text-gaushala-green-700">Best Animal Shelter 2023</h3>
+                <p className="text-gray-700">Awarded by the State Animal Welfare Board</p>
+              </div>
+              <div className="bg-gaushala-cream p-6 rounded-lg">
+                <h3 className="text-xl font-semibold mb-2 text-gaushala-green-700">Excellence in Animal Care</h3>
+                <p className="text-gray-700">Recognition by the National Veterinary Association</p>
+              </div>
+              <div className="bg-gaushala-cream p-6 rounded-lg">
+                <h3 className="text-xl font-semibold mb-2 text-gaushala-green-700">Community Impact Award</h3>
+                <p className="text-gray-700">For outstanding contribution to animal welfare</p>
               </div>
             </div>
           </div>

@@ -12,12 +12,19 @@ const CallToAction = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/donate">
-            <Button size="lg" className="bg-white text-gaushala-green-700 hover:bg-gray-100 text-lg px-8">
+            <Button 
+              size="lg" 
+              className="bg-[#ea384c] hover:bg-[#d62d3f] text-white text-lg px-8 py-6 transform transition-all duration-300 hover:scale-105 animate-pulse"
+            >
               Donate Now
             </Button>
           </Link>
           <Link to="/volunteer">
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gaushala-green-700 text-lg px-8">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-white text-white hover:bg-white hover:text-gaushala-green-700 text-lg px-8"
+            >
               Become a Volunteer
             </Button>
           </Link>
