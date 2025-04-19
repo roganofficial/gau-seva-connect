@@ -1,26 +1,14 @@
-
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Award, Calendar, Heart, ImageIcon } from "lucide-react";
-
 const Initiatives = () => {
-  return (
-    <div className="flex flex-col min-h-screen">
+  return <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-gaushala-cream py-12">
-          <div className="container mx-auto px-4">
-            <div className="text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Our Initiatives</h1>
-              <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-                Discover our programs dedicated to cow welfare, traditional celebrations, and sustainable practices.
-              </p>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Initiatives Content */}
         <section className="py-16 bg-white">
@@ -40,11 +28,7 @@ const Initiatives = () => {
                       <div className="space-y-6">
                         <div className="flex flex-col md:flex-row gap-6">
                           <div className="md:w-1/2">
-                            <img 
-                              src="https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                              alt="Cow Feeding" 
-                              className="w-full h-64 object-cover rounded-lg"
-                            />
+                            <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cow Feeding" className="w-full h-64 object-cover rounded-lg" />
                           </div>
                           <div className="md:w-1/2">
                             <p className="text-gray-700 mb-4">
@@ -70,11 +54,7 @@ const Initiatives = () => {
                       <div className="space-y-6">
                         <div className="flex flex-col md:flex-row gap-6">
                           <div className="md:w-1/2">
-                            <img 
-                              src="https://images.unsplash.com/photo-1493962853295-0fd70327578a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                              alt="Veterinary Care" 
-                              className="w-full h-64 object-cover rounded-lg"
-                            />
+                            <img src="https://images.unsplash.com/photo-1493962853295-0fd70327578a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Veterinary Care" className="w-full h-64 object-cover rounded-lg" />
                           </div>
                           <div className="md:w-1/2">
                             <p className="text-gray-700 mb-4">
@@ -101,33 +81,21 @@ const Initiatives = () => {
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div>
                           <h3 className="text-xl font-medium mb-3 text-gray-900">Modern Sheds</h3>
-                          <img 
-                            src="https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                            alt="Cow Shed" 
-                            className="w-full h-48 object-cover rounded-lg mb-3"
-                          />
+                          <img src="https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cow Shed" className="w-full h-48 object-cover rounded-lg mb-3" />
                           <p className="text-gray-700">
                             Spacious, well-ventilated sheds designed for cow comfort in all seasons, with proper drainage and natural lighting.
                           </p>
                         </div>
                         <div>
                           <h3 className="text-xl font-medium mb-3 text-gray-900">Waste Management</h3>
-                          <img 
-                            src="https://images.unsplash.com/photo-1517022812141-23620dba5c23?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                            alt="Biogas Plant" 
-                            className="w-full h-48 object-cover rounded-lg mb-3"
-                          />
+                          <img src="https://images.unsplash.com/photo-1517022812141-23620dba5c23?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Biogas Plant" className="w-full h-48 object-cover rounded-lg mb-3" />
                           <p className="text-gray-700">
                             Sustainable biogas production and composting systems that convert cow dung into energy and organic fertilizer.
                           </p>
                         </div>
                         <div>
                           <h3 className="text-xl font-medium mb-3 text-gray-900">Grazing Areas</h3>
-                          <img 
-                            src="https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                            alt="Grazing Area" 
-                            className="w-full h-48 object-cover rounded-lg mb-3"
-                          />
+                          <img src="https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Grazing Area" className="w-full h-48 object-cover rounded-lg mb-3" />
                           <p className="text-gray-700">
                             Open pastures where cows can roam freely, exercise, and engage in natural behaviors essential for their mental wellbeing.
                           </p>
@@ -159,11 +127,7 @@ const Initiatives = () => {
                             <p className="text-gray-600 text-sm">November (Kartik month)</p>
                           </div>
                         </div>
-                        <img 
-                          src="https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                          alt="Gopashtami Celebration" 
-                          className="w-full h-64 object-cover rounded-lg mb-4"
-                        />
+                        <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Gopashtami Celebration" className="w-full h-64 object-cover rounded-lg mb-4" />
                         <p className="text-gray-700">
                           Gopashtami celebrates Lord Krishna's role as a cowherd. Our Gaushala hosts a special pooja where cows are adorned with colorful ornaments, garlands, and their horns painted with turmeric. Community members participate in the ritual bathing and decoration of cows.
                         </p>
@@ -181,11 +145,7 @@ const Initiatives = () => {
                             <p className="text-gray-600 text-sm">October/November (after Diwali)</p>
                           </div>
                         </div>
-                        <img 
-                          src="https://images.unsplash.com/photo-1493962853295-0fd70327578a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                          alt="Govardhan Puja" 
-                          className="w-full h-64 object-cover rounded-lg mb-4"
-                        />
+                        <img src="https://images.unsplash.com/photo-1493962853295-0fd70327578a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Govardhan Puja" className="w-full h-64 object-cover rounded-lg mb-4" />
                         <p className="text-gray-700">
                           This festival commemorates Lord Krishna's lifting of Govardhan Hill. At our Gaushala, we prepare a symbolic Govardhan Hill made from cow dung and decorate it with flowers. Cows are worshipped and fed special treats while devotees perform parikrama (circumambulation).
                         </p>
@@ -203,11 +163,7 @@ const Initiatives = () => {
                             <p className="text-gray-600 text-sm">January 14/15</p>
                           </div>
                         </div>
-                        <img 
-                          src="https://images.unsplash.com/photo-1517022812141-23620dba5c23?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                          alt="Makara Sankranti" 
-                          className="w-full h-64 object-cover rounded-lg mb-4"
-                        />
+                        <img src="https://images.unsplash.com/photo-1517022812141-23620dba5c23?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Makara Sankranti" className="w-full h-64 object-cover rounded-lg mb-4" />
                         <p className="text-gray-700">
                           During this harvest festival, we honor cows with special decorations and feed them freshly harvested grains and jaggery. Visitors bring donations of fodder and participate in community meals where traditional sweets made from cow ghee are served.
                         </p>
@@ -225,11 +181,7 @@ const Initiatives = () => {
                             <p className="text-gray-600 text-sm">January (Tamil month of Thai)</p>
                           </div>
                         </div>
-                        <img 
-                          src="https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                          alt="Pongal Celebration" 
-                          className="w-full h-64 object-cover rounded-lg mb-4"
-                        />
+                        <img src="https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pongal Celebration" className="w-full h-64 object-cover rounded-lg mb-4" />
                         <p className="text-gray-700">
                           The third day of Pongal, known as Mattu Pongal, is dedicated to cows. We decorate our cows with bells, beads, and flowers, and prepare special Pongal (a sweet rice dish) which is first offered to the cows before being distributed among visitors.
                         </p>
@@ -257,15 +209,9 @@ const Initiatives = () => {
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {[...Array(9)].map((_, i) => (
-                      <div key={i} className="overflow-hidden rounded-lg shadow-md">
-                        <img 
-                          src={`https://images.unsplash.com/photo-${i % 2 === 0 ? '1465379944081-7f47de8d74ac' : i % 3 === 0 ? '1472396961693-142e6e269027' : '1493962853295-0fd70327578a'}?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80`} 
-                          alt={`Gallery Image ${i + 1}`} 
-                          className="w-full h-64 object-cover transition-transform hover:scale-105"
-                        />
-                      </div>
-                    ))}
+                    {[...Array(9)].map((_, i) => <div key={i} className="overflow-hidden rounded-lg shadow-md">
+                        <img src={`https://images.unsplash.com/photo-${i % 2 === 0 ? '1465379944081-7f47de8d74ac' : i % 3 === 0 ? '1472396961693-142e6e269027' : '1493962853295-0fd70327578a'}?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80`} alt={`Gallery Image ${i + 1}`} className="w-full h-64 object-cover transition-transform hover:scale-105" />
+                      </div>)}
                   </div>
 
                   <div className="mt-12">
@@ -321,8 +267,6 @@ const Initiatives = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Initiatives;
