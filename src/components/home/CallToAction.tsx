@@ -14,7 +14,7 @@ const CallToAction = () => {
             </Button>
           </Link>
           <Link to="/volunteer">
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gaushala-green-700 text-lg px-8">
+            <Button size="lg" variant="outline" className="border-white hover:bg-white text-lg px-8 text-gray-950">
               Become a Volunteer
             </Button>
           </Link>
