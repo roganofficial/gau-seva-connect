@@ -7,19 +7,10 @@ const About = () => {
       <Navbar />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-gaushala-cream py-12">
-          <div className="container mx-auto px-4">
-            <div className="text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">About Our Gaushala</h1>
-              <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-                Learn about our journey, mission, and the dedicated team behind गौ सेवा Connect.
-              </p>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Founding Story */}
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-gray-200">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
