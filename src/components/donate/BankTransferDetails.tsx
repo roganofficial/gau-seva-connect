@@ -2,6 +2,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Copy, Download } from "lucide-react";
+import jsPDF from 'jspdf';
+import autoTable from 'jspdf-autotable';
 
 export const bankDetails = {
   accountName: "गौ सेवा Connect Foundation",
@@ -15,6 +17,32 @@ export const bankDetails = {
 const BankTransferDetails = () => {
   const handleCopyToClipboard = (text: string) => {
     navigator.clipboard.writeText(text);
+  };
+
+  const handleDownloadPDF = () => {
+    const doc = new jsPDF();
+    
+    // Add title
+    doc.setFontSize(16);
+    doc.text('Bank Account Details', 14, 20);
+    
+    // Prepare data for table
+    const tableData = Object.entries(bankDetails).map(([key, value]) => [
+      key.split(/(?=[A-Z])/).join(" "),
+      value
+    ]);
+    
+    // Add table
+    autoTable(doc, {
+      startY: 30,
+      head: [['Field', 'Details']],
+      body: tableData,
+      styles: { fontSize: 12 },
+      headStyles: { fillColor: [76, 175, 80] },
+    });
+    
+    // Save PDF
+    doc.save('gau-seva-connect-bank-details.pdf');
   };
 
   return (
@@ -48,7 +76,11 @@ const BankTransferDetails = () => {
           </div>
           
           <div className="flex justify-center mt-4">
-            <Button variant="outline" className="flex items-center gap-2">
+            <Button 
+              variant="outline" 
+              className="flex items-center gap-2"
+              onClick={handleDownloadPDF}
+            >
               <Download size={16} /> Download Bank Details (PDF)
             </Button>
           </div>
