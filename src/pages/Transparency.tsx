@@ -22,13 +22,26 @@ const Transparency = () => {
         <section className="bg-gaushala-cream px-0 mx-0 my-[5px] py-0"></section>
 
         {/* Transparency Content */}
-        <section className="py-16 bg-white">
+        <section className="pb-16 pt-8 bg-white">
           <div className="container mx-auto px-4">
             <Tabs defaultValue="legal">
-              <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 mb-8">
-                <TabsTrigger value="legal">Legal Compliance</TabsTrigger>
-                <TabsTrigger value="financial">Financial Reports</TabsTrigger>
-                <TabsTrigger value="recognition">
+              <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 mb-8 border border-[#e0e0e0] rounded-lg p-1 gap-1 min-h-[140px] md:min-h-fit">
+                <TabsTrigger
+                  value="legal"
+                  className="h-full flex items-center justify-center py-1 md:p-2 data-[state=active]:bg-gaushala-green-50  data-[state=active]:border data-[state=active]:border-[#e0e0e0]"
+                >
+                  Legal Compliance
+                </TabsTrigger>
+                <TabsTrigger
+                  value="financial"
+                  className="h-full flex items-center justify-center py-1 md:p-2 data-[state=active]:bg-gaushala-green-50  data-[state=active]:border data-[state=active]:border-[#e0e0e0]"
+                >
+                  Financial Reports
+                </TabsTrigger>
+                <TabsTrigger
+                  value="recognition"
+                  className="h-full flex items-center justify-center py-1 md:p-2 data-[state=active]:bg-gaushala-green-50  data-[state=active]:border data-[state=active]:border-[#e0e0e0]"
+                >
                   Recognition & Compliance
                 </TabsTrigger>
               </TabsList>

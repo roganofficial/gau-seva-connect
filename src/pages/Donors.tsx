@@ -4,6 +4,8 @@ import Footer from "@/components/layout/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Heart } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 interface DonorProps {
   name: string;
   amount: string;
@@ -171,9 +173,9 @@ const Donors = () => {
         {/* Hero Section */}
 
         {/* Donor Wall */}
-        <section className="py-16 bg-white">
+        <section className="pb-16 pt-8 bg-white">
           <div className="container mx-auto px-4">
-            <div className="flex justify-between items-center mb-8">
+            <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-8">
               <h2 className="text-3xl font-semibold text-gray-900">
                 Donor Recognition Wall
               </h2>
@@ -198,7 +200,7 @@ const Donors = () => {
                     className={`absolute left-1 top-1 w-4 h-4 rounded-full transition-transform duration-200 ease-in-out bg-white shadow-sm ${
                       showAnonymous
                         ? "transform translate-x-6 bg-gaushala-green-500"
-                        : "bg-gray-500"
+                        : ""
                     }`}
                   />
                 </div>
@@ -206,12 +208,23 @@ const Donors = () => {
             </div>
 
             <Tabs defaultValue="platinum">
-              <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 mb-8">
-                <TabsTrigger value="platinum">
+              <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 mb-8 border border-[#e0e0e0] rounded-lg p-0 p-1 gap-1 min-h-[140px] md:min-h-fit">
+                <TabsTrigger
+                  value="platinum"
+                  className="data-[state=active]:bg-gaushala-green-50  data-[state=active]:border data-[state=active]:border-[#e0e0e0] p-2 h-full flex items-center justify-center"
+                >
                   Platinum Donors (₹2,00,000+)
                 </TabsTrigger>
-                <TabsTrigger value="gold">Gold Donors (₹75,000+)</TabsTrigger>
-                <TabsTrigger value="silver">
+                <TabsTrigger
+                  value="gold"
+                  className="data-[state=active]:bg-gaushala-green-50  data-[state=active]:border data-[state=active]:border-[#e0e0e0] p-2 h-full flex items-center justify-center"
+                >
+                  Gold Donors (₹75,000+)
+                </TabsTrigger>
+                <TabsTrigger
+                  value="silver"
+                  className="data-[state=active]:bg-gaushala-green-50  data-[state=active]:border data-[state=active]:border-[#e0e0e0] p-2 h-full flex items-center justify-center"
+                >
                   Silver Donors (₹25,000+)
                 </TabsTrigger>
               </TabsList>
@@ -297,12 +310,20 @@ const Donors = () => {
               our cows. Every donation, big or small, helps us provide better
               care.
             </p>
-            <a
+            {/* <a
               href="/donate"
               className="inline-block bg-white text-gaushala-green-700 hover:bg-gray-100 px-8 py-3 rounded-md font-semibold text-lg transition-colors"
             >
               Become a Donor
-            </a>
+            </a> */}
+            <Link to="/donate">
+              <Button
+                size="lg"
+                className="inline-block bg-white text-gaushala-green-700 hover:bg-gray-100 px-8 py-0 rounded-md font-semibold text-lg transition-colors"
+              >
+                Become a Donor
+              </Button>
+            </Link>
           </div>
         </section>
       </main>

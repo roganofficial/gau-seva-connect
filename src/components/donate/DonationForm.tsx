@@ -116,7 +116,7 @@ const DonationForm = () => {
                     <RadioGroupItem
                       value="custom"
                       id="amount-custom"
-                      className="absolute right-3 top-3"
+                      className="absolute right-3 top-3  sr-only"
                     />
                     <Label
                       htmlFor="amount-custom"
@@ -152,7 +152,7 @@ const DonationForm = () => {
               </div>
 
               <div className="space-y-3">
-                <div className="flex items-center justify-between">
+                {/* <div className="flex items-center justify-between">
                   <Label htmlFor="recurring" className="text-base">
                     Make this a monthly donation
                   </Label>
@@ -161,7 +161,7 @@ const DonationForm = () => {
                     checked={isRecurring}
                     onCheckedChange={setIsRecurring}
                   />
-                </div>
+                </div> */}
                 <div className="flex items-center justify-between">
                   <Label htmlFor="anonymous" className="text-base">
                     Donate anonymously
